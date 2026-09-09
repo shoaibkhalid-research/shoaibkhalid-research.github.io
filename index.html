@@ -19,8 +19,29 @@ a:hover{text-decoration:underline}
 .container{max-width:var(--max);margin:0 auto;padding:0 24px}
 header{position:sticky;top:0;z-index:50;background:rgba(250,251,253,.97);border-bottom:1px solid var(--line)}
 nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-weight:800;color:var(--navy);letter-spacing:.01em}
-.navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+.brand-profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--navy);
+
+  font-family:"Segoe UI", Arial, sans-serif;
+  font-weight:700;
+  font-size:17px;
+  letter-spacing:.01em;
+}.brand-profile img{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(88,104,155,.25);
+}
+
+.brand-profile:hover{
+  color:var(--blue);
+  text-decoration:none;
+}.navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
 .hero{background:linear-gradient(135deg,#292F59 0%,#292F59 58%,#58689B 100%);color:#FAFBFD;padding:88px 0 76px}
 .hero-grid{display:grid;grid-template-columns:1.5fr .75fr;gap:46px;align-items:center}
 .kicker{text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:800;color:#DDE1EA}
@@ -987,9 +1008,10 @@ header nav{
   <div class="container">
     <nav>
 
-      <div class="brand">
-        Muhammad Shoaib Khalid
-      </div>
+      <a class="brand-profile" href="#about">
+  <img src="images/profile-small.jpg" alt="Muhammad Shoaib Khalid">
+  <span>Muhammad Shoaib Khalid</span>
+</a>
 
       <div class="navlinks">
         <a href="#about">About</a>
