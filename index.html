@@ -871,7 +871,115 @@ header nav{
     padding:16px;
   }
 }
+/* =========================================
+   AWARDS & CERTIFICATES
+   ========================================= */
 
+.awards-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+  align-items:stretch;
+}
+.award-card{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  box-sizing:border-box;
+
+  background:#FAFBFD;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:24px;
+
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    border-color .22s ease;
+}
+.award-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(41,47,89,.10);
+  border-color:rgba(88,104,155,.45);
+}
+
+.award-type{
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:var(--blue);
+  margin-bottom:10px;
+}
+
+.award-card h3{
+  margin:0 0 8px;
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size:18px;
+  line-height:1.4;
+  color:var(--navy);
+}
+
+.award-org{
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size:14px;
+  font-weight:600;
+  color:var(--muted);
+  margin:0 0 10px;
+}
+
+.award-description{
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size:14px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 15px;
+}
+
+.award-year{
+  display:inline-block;
+  align-self:flex-start;
+  padding:4px 9px;
+  border-radius:999px;
+
+  background:rgba(221,225,234,.35);
+  border:1px solid var(--line);
+
+  color:var(--blue);
+  font-size:12px;
+  font-weight:700;
+
+  margin-bottom:16px;
+}
+
+.award-link{
+  display:inline-block;
+  margin-top:auto;
+
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size:14px;
+  font-weight:700;
+
+  color:var(--blue);
+}
+
+.award-link:hover{
+  text-decoration:underline;
+}
+
+/* Mobile */
+@media(max-width:1000px){
+  .awards-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media(max-width:700px){
+  .awards-grid{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 <body>
@@ -888,6 +996,7 @@ header nav{
         <a href="#research">Projects</a>
         <a href="#publications">Publications</a>
         <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
         <a href="#skills">Skills</a>
         <a href="gallery.html">Gallery</a>
         <a href="#contact">Contact</a>
@@ -1419,8 +1528,164 @@ header nav{
   </p>
 </div>
 </section>
+<section id="awards" class="white">
+  <div class="container">
 
-<section id="skills">
+    <h2>Awards &amp; Certificates</h2>
+
+    <p class="intro">
+      Selected scholarships, academic recognitions, and awards received during my academic journey.
+    </p>
+
+    <div class="awards-grid">
+
+      <!-- ANSO SCHOLARSHIP -->
+      <article class="award-card">
+
+        <div class="award-type">Scholarship</div>
+
+        <h3>ANSO Scholarship for Young Talents</h3>
+
+        <p class="award-org">
+          Alliance of International Science Organizations (ANSO)
+        </p>
+
+        <p class="award-description">
+          Awarded for Master's studies at the University of Chinese Academy of Sciences.
+        </p>
+
+        <span class="award-year">2022</span>
+
+        <a class="award-link"
+           href="certificates/anso-scholarship.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Award Letter →
+        </a>
+
+      </article>
+
+
+      <!-- CHINESE SPEECH COMPETITION -->
+      <article class="award-card">
+
+        <div class="award-type">Competition Award</div>
+
+        <h3>Second Prize — Chinese Speech Competition</h3>
+
+        <p class="award-org">
+          Dalian Institute of Chemical Physics, Chinese Academy of Sciences
+        </p>
+
+        <p class="award-description">
+          Awarded second prize in the Chinese speech competition held at DICP.
+        </p>
+
+        <span class="award-year">2024</span>
+
+        <a class="award-link"
+           href="images/certificates/chinese-speech-competition.jpg"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Certificate →
+        </a>
+
+      </article>
+<article class="award-card">
+
+  <div class="award-type">
+    Academic Participation
+  </div>
+
+  <h3>
+    Poster Presentation Competition
+  </h3>
+
+  <p class="award-org">
+    Department of Chemical Engineering, University of Gujrat
+  </p>
+
+  <p class="award-description">
+    Participated in the Poster Presentation Competition during the seminar on
+    “Emerging Technologies in Process Industries &amp; Entrepreneurship.”
+  </p>
+
+  <span class="award-year">
+    2015
+  </span>
+
+  <a class="award-link"
+     href="images/certificates/poster-presentation-competition-2015.jpg"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Certificate →
+  </a>
+
+</article>
+<article class="award-card">
+
+  <div class="award-type">
+    Competition Participation
+  </div>
+
+  <h3>
+    All Pakistan Project &amp; Poster Competition
+  </h3>
+
+  <p class="award-org">
+    Faculty of Engineering and Technology, University of Gujrat
+  </p>
+
+  <p class="award-description">
+    Participated in the All Pakistan Project &amp; Poster Competition held at the University of Gujrat, Hafiz Hayat Campus.
+  </p>
+
+  <span class="award-year">
+    2015
+  </span>
+
+  <a class="award-link"
+     href="images/certificates/all-pakistan-project-poster-competition-2015.jpg"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Certificate →
+  </a>
+
+</article>
+<article class="award-card">
+
+  <div class="award-type">
+    Academic Participation
+  </div>
+
+  <h3>
+    Math Genius 2015 Quiz
+  </h3>
+
+  <p class="award-org">
+    Hayatian's Mathematical Society, University of Gujrat
+  </p>
+
+  <p class="award-description">
+    Participated in the Math Genius 2015 Quiz organized by Hayatian's Mathematical Society at the University of Gujrat.
+  </p>
+
+  <span class="award-year">
+    2015
+  </span>
+
+  <a class="award-link"
+     href="images/certificates/math-genius-quiz-2015.jpg"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Certificate →
+  </a>
+
+</article>
+    </div>
+
+  </div>
+</section><section id="skills">
 <div class="container">
   <h2>Research Skills</h2>
   <p class="intro">Methods and tools used across catalyst synthesis, materials characterization, and photocatalytic research.</p>
