@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WeChat | Muhammad Shoaib Khalid</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      background: #FAFBFD;
+      color: #292F59;
+    }
+
+    .wechat-card {
+      width: 100%;
+      max-width: 460px;
+      background: #ffffff;
+      border: 1px solid #DDE1EA;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(41,47,89,0.10);
+    }
+
+    .wechat-card h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      color: #292F59;
+    }
+
+    .wechat-card p {
+      margin: 0 0 22px;
+      color: #6B7180;
+      font-size: 15px;
+    }
+
+    .qr-image {
+      display: block;
+      width: 100%;
+      max-width: 330px;
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 12px;
+    }
+
+    .wechat-id {
+      font-size: 14px;
+      color: #6B7180;
+    }
+
+    .wechat-id strong {
+      color: #292F59;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #58689B;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 20px;
+      }
+
+      .wechat-card {
+        padding: 25px 20px;
+      }
+
+      .qr-image {
+        max-width: 290px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="wechat-card">
+
+    <h1>Connect on WeChat</h1>
+
+    <p>Scan the QR code below to add me on WeChat.</p>
+
+    <img
+      class="qr-image"
+      src="images/wechat-qr.jpg"
+      alt="Muhammad Shoaib Khalid WeChat QR Code">
+
+    <div class="wechat-id">
+      WeChat ID: <strong>i_mshoaib</strong>
+    </div>
+
+    <a class="back-link" href="index.html">
+      ← Back to Research Portfolio
+    </a>
+
+  </div>
+
+</body>
+
+</html>
